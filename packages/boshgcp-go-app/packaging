@@ -4,7 +4,7 @@ export GOROOT=$(readlink -nf /var/vcap/packages/golang)
 export GOPATH=${BOSH_INSTALL_TARGET}
 export PATH=$GOROOT/bin:$PATH
 
-mkdir ${GOPATH}
-cp -r * ${GOPATH}
+mkdir ${GOPATH}/exec
+cp -r * ${GOPATH}/exec
 
-go build -o ${GOPATH}/bin/boshgcp-go-app /main.go
+go build -o ${GOPATH}/bin/boshgcp-go-app main.go
