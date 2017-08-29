@@ -5,6 +5,6 @@ export GOPATH=${BOSH_INSTALL_TARGET}
 export PATH=$GOROOT/bin:$PATH
 
 mkdir ${GOPATH}
-cp -a * ${GOPATH}
+cp -r * ${GOPATH}
 
-go build -o ${GOPATH}/bin/boshgcp-go-app /main.go
+go build -o ${GOPATH}/bin/boshgcp-go-app main.go
