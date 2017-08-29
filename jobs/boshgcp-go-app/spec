@@ -1,7 +1,8 @@
 ---
 name: boshgcp-go-app
 
-templates: {}
+templates:
+  ctl.sh: bin/stl.sh
 
 packages: []
 
