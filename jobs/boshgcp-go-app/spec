@@ -6,6 +6,6 @@ templates:
 
 packages:
   - golang
-  -boshgcp-go-app
+  - boshgcp-go-app
 
 properties: {}
