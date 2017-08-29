@@ -1,6 +1,5 @@
 set -e
 
-REPO_NAME=github.com/anthonysroberts/boshgcp-go-app
 export GOROOT=$(readlink -nf /var/vcap/packages/golang)
 export GOPATH=${BOSH_INSTALL_TARGET}
 export PATH=$GOROOT/bin:$PATH
@@ -8,4 +7,4 @@ export PATH=$GOROOT/bin:$PATH
 mkdir ${GOPATH}/src
 cp -a * ${GOPATH}/src
 
-go build -o ${GOPATH}/bin/boshgcp-go-app ${REPO_NAME}/src/main.go
+go build -o ${GOPATH}/bin/boshgcp-go-app main.go
