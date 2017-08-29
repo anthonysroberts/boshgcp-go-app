@@ -7,4 +7,4 @@ export PATH=$GOROOT/bin:$PATH
 mkdir ${GOPATH}/src
 cp -a * ${GOPATH}/src
 
-go build -o ${GOPATH}/bin/boshgcp-go-app main.go
+go build -o ${GOPATH}/bin/boshgcp-go-app /main.go
