@@ -9,7 +9,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
     if r.URL.Path == "/ping" {
         fmt.Fprintf(w, "OK")
     } else {
-        fmt.Fprintf(w, "HelloWorld")
+        fmt.Fprintf(w, "Hello from bosh on GCP!")
     }
 }
 
