@@ -4,4 +4,4 @@ dependencies:
 - golang
 
 files:
-    - github.com/anthonysroberts/boshgcp-go-app/src/*
+    - github.com/anthonysroberts/boshgcp-go-app/src/main.go
