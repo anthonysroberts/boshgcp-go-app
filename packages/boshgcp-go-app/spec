@@ -1,7 +1,7 @@
 name: go-tournament
 
 dependencies:
-- golang
+ - golang
 
 files:
-    - github.com/anthonysroberts/boshgcp-go-app/src/main.go
+ - github.com/anthonysroberts/boshgcp-go-app/src/main.go
