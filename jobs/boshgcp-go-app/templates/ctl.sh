@@ -1,4 +1,4 @@
-PP_DIR=/var/vcap/sys/run/boshgcp-go-app
+APP_DIR=/var/vcap/sys/run/boshgcp-go-app
 LOG_DIR=/var/vcap/sys/log/boshgcp-go-app
 PIDFILE=${APP_DIR}/pid
 RUN_USER=vcap
