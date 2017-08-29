@@ -2,8 +2,10 @@
 name: boshgcp-go-app
 
 templates:
-  ctl.sh: bin/stl.sh
+  ctl.sh: bin/ctl.sh
 
-packages: []
+packages:
+  - golang
+  -boshgcp-go-app
 
 properties: {}
