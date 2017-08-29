@@ -4,4 +4,4 @@ dependencies:
  - golang
 
 files:
- - src/main.go
+ - main.go
