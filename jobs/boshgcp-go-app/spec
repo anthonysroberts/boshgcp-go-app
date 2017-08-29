@@ -1,0 +1,8 @@
+---
+name: boshgcp-go-app
+
+templates: {}
+
+packages: []
+
+properties: {}
