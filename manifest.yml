@@ -1,0 +1,32 @@
+name: boshgcp-go-app
+     
+releases:
+ - name: boshgcp-go-app
+   version: latest
+             
+stemcells:
+ - alias: default
+   os: ubuntu-trusty
+   version: latest
+                          
+update:
+  canaries: 1
+  max_in_flight: 1
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+                                                   
+instance_groups:
+  - name: boshgcp-go-app
+    azs:
+    - z1
+    instances: 1
+    jobs:
+        - name: boshgcp-go-app
+    release: boshgcp-go-app
+       properties: {}
+    vm_type: g1-small
+    stemcell: default
+    networks:
+    - name: default
+      static_ips:
+      - 10.0.0.15
