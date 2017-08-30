@@ -13,7 +13,7 @@ case $1 in
                                      
          cd /var/vcap/packages/boshgcp-go-app
                                              
-         exec chpst -u $RUN_USER:$RUN_USER /var/vcap/packages/boshgcp-go-app/bin/boshgcp-go-app \
+         exec /var/vcap/packages/boshgcp-go-app/bin/boshgcp-go-app \
              >>  $LOG_DIR/boshgcp-go-app.stdout.log \
              2>> $LOG_DIR/boshgcp-go-app.stderr.log
                                                      
