@@ -13,9 +13,9 @@ case $1 in
                              
         echo $$ > $PIDFILE
                                      
-        cd /var/vcap/packages/boshgcp-go-app
+        cd /var/vcap/packages/go-app
                                              
-        exec chpst -u $RUN_USER:$RUN_USER /var/vcap/packages/boshgcp-go-app/bin/boshgcp-go-app \
+        exec chpst -u $RUN_USER:$RUN_USER /var/vcap/packages/go-app/bin/go-app \
             >>  $LOG_DIR/boshgcp-go-app.stdout.log \
             2>> $LOG_DIR/boshgcp-go-app.stderr.log
                                                      
