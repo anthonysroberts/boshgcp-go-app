@@ -1,11 +1,11 @@
 ---
-name: boshgcp-go-app
+name: go-app
 
 templates:
   ctl.sh: bin/ctl.sh
 
 packages:
   - golang
-  - boshgcp-go-app
+  - go-app
 
 properties: {}
