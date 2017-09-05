@@ -22,7 +22,7 @@ instance_groups:
     - z1
     instances: 1
     jobs:
-    - name: boshgcp-go-app
+    - name: go-app
       release: boshgcp-go-app
       properties: 
        port: 8080
