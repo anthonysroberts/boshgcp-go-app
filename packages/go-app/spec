@@ -1,4 +1,4 @@
-name: boshgcp-go-app
+name: go-app
 
 dependencies:
  - golang
