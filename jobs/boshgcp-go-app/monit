@@ -1,4 +1,4 @@
-check process boshgcp-go-app
+check process go-app
   with pidfile /var/vcap/sys/run/boshgcp-go-app/pid
   start program "/var/vcap/jobs/go-app/bin/ctl.sh start"
   stop program "/var/vcap/jobs/go-app/bin/ctl.sh stop"
